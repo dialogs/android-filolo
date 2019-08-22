@@ -7,17 +7,18 @@ This library uses the [Android Storage Access Framework](https://developer.andro
 
 To install the library simply do the following,
 
-1. Open this project in Android Studio and then build it. Then navigate to the folders `app -> build -> outputs -> aar` and select the generated `.aar` file and copy it to the `libs` folder of your project.
-2. Alternatively install it as a gradle dependency from `jcenter()` by adding it to the dependencies section of your project i.e
+1. Open this project in Android Studio and then build it. Then navigate to the folders `app -> build -> outputs -> aar` and select the generated `.aar` file 
+2. Then modify your project's `build.gradle` file found in the app folder and add the dependency 
+	`implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])`
+	or modify the dependency to include `.aar` files if it already exists.
+	and copy it to the `libs` folder of your project.
+3. Alternatively install it as a gradle dependency from `jcenter()` by adding it to the dependencies section of your project i.e
 ```
 dependencies {
     implementation 'com.filolo.fileselector:filolo:0.1.0'
     ...
 }
 ```
-3. Then modify your project's `build.gradle` file found in the app folder and add the dependency 
-	`implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])`
-	or modifiy the dependency to include `.aar` files if it already exists.
 4. Finally clean and build your project to now use the library.
 
 ## Usage
