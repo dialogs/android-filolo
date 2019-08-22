@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FileSelectorExample</string>
+    <string name="dialogs_btn_select_file_text">Select Files</string>
+</resources>
